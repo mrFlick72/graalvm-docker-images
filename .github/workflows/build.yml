@@ -16,4 +16,4 @@ jobs:
           docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
           cd java17-22.2.0
           docker build . -t mrflick72/graalvm/jdk:java17-22.2.0
-          docker push mrflick72/graalvm/jdk:java17-22.2.0
+#          docker push mrflick72/graalvm/jdk:java17-22.2.0
