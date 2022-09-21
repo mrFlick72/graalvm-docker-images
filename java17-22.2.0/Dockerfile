@@ -8,11 +8,11 @@ RUN wget https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.2.
     export JAVA_HOME=/usr/lib/jvm/graalvm-ce-java17-22.2.0 && \
     export PATH=$JAVA_HOME/bin:$PATH && \
     gu install native-image && \
-    sudo apt-get install libz-dev && \
-    sudo apt-get update && sudo apt-get upgrade && \
-    sudo apt-get install build-essential && \
-    sudo apt-get install aptitude && \
-    sudo apt-get install libstdc++6
+    sudo apt-get -y install libz-dev && \
+    sudo apt-get -y update && sudo apt-get upgrade && \
+    sudo apt-get -y install build-essential && \
+    sudo apt-get -y install aptitude && \
+    sudo apt-get -y install libstdc++6
 
 ENV JAVA_HOME=/usr/lib/jvm/graalvm-ce-java17-22.2.0
 ENV PATH=$JAVA_HOME/bin:$PATH
